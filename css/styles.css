@@ -4856,6 +4856,40 @@ input[type="button"].btn-block {
   }
 }
 
+.peringkat-produk {
+  flex: 100%;
+  overflow-x: auto;
+  max-width: 50%
+}
+
+.peringkat-produk table {
+  width: 100%;
+  height: 95%;
+  border-collapse: collapse;
+  margin-left: 15px;
+}
+
+.peringkat-produk tr {
+  border: 1px solid #BCBEC1 ; 
+  padding: 0 8px;
+  background-color: #fff;
+}
+
+.peringkat-produk th {
+  padding: 1px 40px;
+  text-align: left;
+}
+
+.peringkat-produk td {
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.peringkat-produk td:nth-child(even) {
+  border-left-color: #fff;
+}
+
+
 .accordion {
   overflow-anchor: none;
 }
