@@ -20,6 +20,10 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -228,8 +232,10 @@
             <div class="row">
               <div class="col-xl-3 col-md-6">
                 <div class="card bg-primary text-white mb-4">
+                  <!-- <i class="fas fa-money-bill" id="icon-uang"></i> -->
                   <div class="card-body" id="total_transaksi">
-                    Total Transaksi
+                    <i class="fas fa-money-bill" id="icon-uang"></i>
+                    <h3><strong>Total Transaksi</strong></h3>
                   </div>
                   <div
                     class="card-footer d-flex align-items-center justify-content-between"
@@ -245,7 +251,10 @@
               </div>
               <div class="col-xl-3 col-md-6">
                 <div class="card bg-warning text-white mb-4">
-                  <div class="card-body" id="stok_barang">Stok Barang</div>
+                  <div class="card-body" id="stok_barang">
+                    <i class="fa fa-medkit" id="icon-stok-barang"></i>
+                    <h3><strong>Stok Barang</strong></h3>
+                  </div>
                   <div
                     class="card-footer d-flex align-items-center justify-content-between"
                   >
@@ -275,15 +284,25 @@
               </div> -->
               <div class="col-xl-3 col-md-6">
                 <div class="card bg-danger text-white mb-4">
-                  <div class="card-body" id="inventaris">Inventaris</div>
+                  <div class="card-body" id="inventaris">
+                    <div class="atas-inventaris-card">
+                    <span>Inventaris</span>
+                    <span>January 2022</span>
+                    </div>
+                  </div>
                   <div
                     class="card-footer d-flex align-items-center justify-content-between"
                   >
-                    <a class="small text-white stretched-link" href="#"
-                      >View Details</a
-                    >
+                    <a class="small text-white stretched-link" href="#">
+                      Barang Masuk<br/>
+                      <h4><strong>100</strong></h4>
+                    </a>
+                    <a class="small text-white stretched-link" href="#">
+                      Barang Keluar<br/>
+                      <h4><strong>100</strong></h4>
+                    </a>
                     <div class="small text-white">
-                      <i class="fas fa-angle-right"></i>
+                      <!-- <i class="fas fa-angle-right"></i> -->
                     </div>
                   </div>
                 </div>

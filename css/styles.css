@@ -1604,8 +1604,9 @@ pre code {
   }
 
   .col-xl-3 {
-    flex: 0 0 25%;
+    flex: 0 0 30%;
     max-width: 55%;
+    height: 25%;
   }
 
   .col-xl-4 {
@@ -4679,10 +4680,26 @@ input[type="button"].btn-block {
   border-top: 0;
 }
 
+/* icons */
+#icon-uang {
+  font-size: 50px;
+  color: #88cbf5;
+}
+
+#icon-stok-barang {
+  font-size: 50px;
+  color: #237bdd;
+}
+
 .card-body {
-  flex: 1 1 auto;
+  display: flex; /* Menjadikan flex container */
+  flex-direction: column; /* Menyusun ikon di atas teks */
+  align-items: center; /* Tengahkan ikon dan teks secara horizontal */
+  justify-content: center; /* Tengahkan ikon dan teks secara vertikal */
+  flex: 1 1 auto; /* Pastikan elemen bisa tumbuh sesuai kebutuhan */
   min-height: 1px;
   padding: 1.25rem;
+  text-align: center; /* Pastikan teks sejajar */
 }
 
 .card-title {
@@ -4731,6 +4748,11 @@ input[type="button"].btn-block {
 
 #inventaris + .card-footer {
   background-color: #fff;
+}
+
+.atas-inventaris-card span {
+  justify-content: space-between;
+  padding: 1px 112px 0 0;
 }
 
 .card-footer:last-child {
@@ -4859,7 +4881,7 @@ input[type="button"].btn-block {
 .peringkat-produk {
   flex: 100%;
   overflow-x: auto;
-  max-width: 50%
+  max-width: 50%;
 }
 
 .peringkat-produk table {
@@ -4870,7 +4892,7 @@ input[type="button"].btn-block {
 }
 
 .peringkat-produk tr {
-  border: 1px solid #BCBEC1 ; 
+  border: 1px solid #bcbec1;
   padding: 0 8px;
   background-color: #fff;
 }
@@ -4888,7 +4910,6 @@ input[type="button"].btn-block {
 .peringkat-produk td:nth-child(even) {
   border-left-color: #fff;
 }
-
 
 .accordion {
   overflow-anchor: none;
@@ -10254,6 +10275,7 @@ button.bg-dark:focus {
 .text-white {
   color: #000 !important;
   font-weight: bold;
+  padding: 10px 0;
 }
 
 .text-primary {
