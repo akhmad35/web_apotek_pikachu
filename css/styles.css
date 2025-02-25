@@ -4879,7 +4879,7 @@ input[type="button"].btn-block {
 }
 
 .peringkat-produk {
-  flex: 100%;
+  display: flex;
   overflow-x: auto;
   max-width: 50%;
 }
@@ -4895,7 +4895,9 @@ input[type="button"].btn-block {
   border: 1px solid #bcbec1;
   padding: 0 8px;
   background-color: #fff;
+  
 }
+
 
 .peringkat-produk th {
   padding: 1px 40px;
@@ -4905,6 +4907,7 @@ input[type="button"].btn-block {
 .peringkat-produk td {
   padding: 5px 10px;
   text-align: center;
+  padding: 0 50px;
 }
 
 .peringkat-produk td:nth-child(even) {
@@ -10272,10 +10275,18 @@ button.bg-dark:focus {
   font-style: italic !important;
 }
 
+.card-footer-kanan-home {
+  display: flex;
+  padding-top: 30px;
+}
+
+.card-footer-kanan-home #barang-keluar{
+  padding-left: 110px;
+}
+
 .text-white {
   color: #000 !important;
   font-weight: bold;
-  padding: 10px 0;
 }
 
 .text-primary {
