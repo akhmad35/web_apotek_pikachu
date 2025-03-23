@@ -6569,7 +6569,13 @@ button.bg-warning:focus {
 
 .bg-danger {
   background-color: #fff !important;
-  width: 450px;
+  width: 490px;
+}
+
+@media (max-width: 768px) {
+  .bg-danger {
+    max-width: 100%; /* Menyesuaikan lebar untuk perangkat kecil */
+  }
 }
 
 a.bg-danger:hover,
