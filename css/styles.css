@@ -6566,7 +6566,7 @@ button.bg-warning:focus {
 
 .bg-danger {
   background-color: #fff !important;
-  width: 490px;
+  width: 480px;
 }
 
 @media (max-width: 768px) {
